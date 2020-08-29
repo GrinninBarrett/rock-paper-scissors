@@ -28,8 +28,13 @@ p {
     text-align: center;
 }
 
-#instructions {
-    margin: 0 auto 40px auto;
+#status {
+    margin: 50px auto auto auto;
+    font-size: 1.3rem;
+}
+
+#score {
+    margin: 50px auto auto auto;
     font-size: 1.1rem;
 }
 
@@ -57,11 +62,11 @@ button:focus {
 }
 
 #choice-buttons {
-    position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    z-index: 3;
 }
 
 .choices {
@@ -71,6 +76,11 @@ button:focus {
     padding: 10px 0 10px 0;
 }
 
+.choices-shown {
+    display: flex;
+}
+
 #end {
+    display: none;
     margin-top: 50px;
 }
