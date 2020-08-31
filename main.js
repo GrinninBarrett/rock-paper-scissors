@@ -126,13 +126,9 @@ function playRound() {
     playerPoints.textContent = `Player: ${playerScore}`;
     computerPoints.textContent = `Computer: ${computerScore}`;
 
-    if (playerScore === computerScore) {
-        bestScore = playerScore;
-    } else {
-        bestScore = computerScore;
-    }
 
-    if (bestScore === 5){
+
+    if (playerScore === 5 || computerScore === 5){
         gameEnded = true;
         let winner;
         let highScore;
